@@ -1,0 +1,117 @@
+//Declaracion de variables para las compuertas de arduino con un led de 7 segmentos de catodo comun. que cuenta de 0 a 9
+
+
+int pinA=2;
+int pinB=3;
+int pinC=4;
+int pinD=5;
+int pinE=6;
+int pinF=7;
+int pinG=8;
+
+void setup() {
+  //Especificamos que las compuertas van a ser utilizados de OUTPUT 
+  // put your setup code here, to run once:
+pinMode(pinA,OUTPUT);
+pinMode(pinB,OUTPUT);
+pinMode(pinC,OUTPUT);
+pinMode(pinD,OUTPUT);
+pinMode(pinE,OUTPUT);
+pinMode(pinF,OUTPUT);
+pinMode(pinG,OUTPUT);
+
+}
+
+void loop() {
+
+  // CERO
+  digitalWrite(pinA, LOW);
+  digitalWrite(pinB, LOW);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, LOW);
+  digitalWrite(pinE, LOW);
+  digitalWrite(pinF, LOW);
+  digitalWrite(pinG, HIGH);
+  delay(2000);  
+  //UNO
+    digitalWrite(pinA, HIGH);
+  digitalWrite(pinB, LOW);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, HIGH);
+  digitalWrite(pinE, HIGH);
+  digitalWrite(pinF, HIGH);
+  digitalWrite(pinG, HIGH);
+  delay (1000);
+  //dos
+  digitalWrite(pinA, LOW);
+  digitalWrite(pinB, LOW);
+  digitalWrite(pinC, HIGH);
+  digitalWrite(pinD, LOW);
+  digitalWrite(pinE, LOW);
+  digitalWrite(pinF, HIGH);
+  digitalWrite(pinG, LOW);
+  delay(1000);
+  //TRES
+  digitalWrite(pinA, LOW);
+  digitalWrite(pinB, LOW);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, LOW);
+  digitalWrite(pinE, HIGH);
+  digitalWrite(pinF, HIGH);
+  digitalWrite(pinG, LOW);
+  delay(1000);
+  //CUATRO
+  digitalWrite(pinA, HIGH);
+  digitalWrite(pinB, LOW);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, HIGH);
+  digitalWrite(pinE, HIGH);
+  digitalWrite(pinF, LOW);
+  digitalWrite(pinG, LOW);
+  delay(1000);
+  //CINCO
+  digitalWrite(pinA, LOW);
+  digitalWrite(pinB, HIGH);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, LOW);
+  digitalWrite(pinE, HIGH);
+  digitalWrite(pinF, LOW);
+  digitalWrite(pinG, LOW);
+  delay(1000);
+  //SEIS
+  digitalWrite(pinA, LOW);
+  digitalWrite(pinB, HIGH);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, LOW);
+  digitalWrite(pinE, LOW);
+  digitalWrite(pinF, LOW);
+  digitalWrite(pinG, LOW);
+  delay(1000);
+  //SIETE
+  digitalWrite(pinA, LOW);
+  digitalWrite(pinB, LOW);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, HIGH);
+  digitalWrite(pinE, HIGH);
+  digitalWrite(pinF, HIGH);
+  digitalWrite(pinG, HIGH);
+  delay(1000);
+  //OCHO
+  digitalWrite(pinA, LOW);
+  digitalWrite(pinB, LOW);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, LOW);
+  digitalWrite(pinE, LOW);
+  digitalWrite(pinF, LOW);
+  digitalWrite(pinG, LOW);
+  delay(1000);
+  //nueve
+  digitalWrite(pinA, LOW);
+  digitalWrite(pinB, LOW);
+  digitalWrite(pinC, LOW);
+  digitalWrite(pinD, LOW);
+  digitalWrite(pinE, HIGH);
+  digitalWrite(pinF, LOW);
+  digitalWrite(pinG, LOW);
+  delay(1000);
+}
